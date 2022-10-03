@@ -1,0 +1,30 @@
+.grid-item.top {grid-area: top-line;}
+.grid-item.first-one {grid-area: first-one;}
+.grid-item.first-two {grid-area: first-two;}
+.grid-item.first-three {grid-area: first-three;}
+.grid-item.first-four {grid-area: first-four;}
+.grid-item.second {grid-area: second;}
+.grid-item.third {grid-area: third;}
+.grid-item.fourth {grid-area: fourth;}
+.grid-item.fifth-zero {grid-area: fifth-zero;}
+.grid-item.fifth {grid-area: fifth;}
+
+
+.calculator {
+    display: grid;
+    grid-template-areas: 'top-line top-line top-line top-line,' 
+    'first-one first-two first-three first-four';
+    background-color: rgba(37, 37, 37, 0.199);
+    padding: 10px;
+}
+
+.grid-item {
+    border: 1px solid rgba(0,0,0,0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* .grid-item-top {
+
+} */
