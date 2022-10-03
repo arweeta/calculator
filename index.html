@@ -10,75 +10,55 @@
 </head>
 
 <body>
-    <div class="calculator">
+    <div>
 
         <div>
             <!-- input box -->
-            <div class="grid-item top"> <input class="display-box" type="text" id="result" disabled /> </div>
+            <div class="grid-item top display-box"> </div>
         </div>
-
-        <div>
-            <!-- first line -->
-            <!-- clearscreen() function to clear all values -->
-            <div class="grid-item first-one"> <button type="button" value="⁺AC" onclick="clearScreen()" />AC</button>
-            </div>
-            
-            <div class="grid-item first-two"> <button type="button" value="⁺∕₋" onclick="display('-')" />⁺∕₋</button>
-            </div>
-            <div class="grid-item first-three"> <button type="button" value="%" onclick="display('%')" />%</button>
-            </div>
-            <div class="grid-item first-four"> <button type="button" value="÷" onclick="display('/')" />÷</button>
-            </div>
-        </div>
-
-        <div>
-            <!-- second line -->
-            <div class="grid-item second"> <button type="button" value="7" onclick="display('7')" />7</button>
-            </div>
-            <div class="grid-item second"> <button type="button" value="8" onclick="display('8')" />8</button>
-            </div>
-            <div class="grid-item second"> <button type="button" value="9" onclick="display('9')" />9</button>
-            </div>
-            <div class="grid-item second"> <button type="button" value="*" onclick="display('x')" />x</button>
-            </div>
-        </div>
-
-        <div>
-            <!-- third line -->
-            <div class="grid-item third"> <button type="button" value="4" onclick="display('4')" />4</button>
-            </div>
-            <div class="grid-item third"> <button type="button" value="5" onclick="display('5')" />5</button>
-            </div>
-            <div class="grid-item third"> <button type="button" value="6" onclick="display('6')" />6</button>
-            </div>
-            <div class="grid-item third"> <button type="button" value="-" onclick="display('-')" />-</button>
-            </div>
-        </div>
-
-        <div>
-            <!-- fourth line -->
-            <div class="grid-item fourth"> <button type="button" value="1" onclick="display('1')" />1</button>
-            </div>
-            <div class="grid-item fourth"> <button type="button" value="2" onclick="display('2')" />2</button>
-            </div>
-            <div class="grid-item fourth"> <button type="button" value="3" onclick="display('3')" />3</button>
-            </div>
-            <div class="grid-item fourth"> <button type="button" value="+" onclick="display('+')" />+</button>
-            </div>
-        </div>
-
-        <div>
-            <!-- fifth line -->
-            <div class="grid-item fifth_zero" colspan="2"> <button type="button" value="0" onclick="display('0')" />0</button>
-            </div>
-            <div class="grid-item fifth"> <button type="button" value="." onclick="display('.')" />.</button>
+        <div class="calculator">
+            <div>
+                <!-- first line -->
+                <!-- clearscreen() function to clear all values -->
+                <button class="grid-item first-one AC" type="button">AC</button>
+                <button class="grid-item first-two operators" type="button">⁺∕₋</button>
+                <button class="grid-item first-three operators" type="button">%</button>
+                <button class="grid-item first-four operators" type="button">÷</button>
             </div>
 
-            <!-- calculate() function evaluates the mathematical expression -->
-            <div class="grid-item fifth"> <button type="button" value="=" onclick="calculate()" />=</button>
+            <div>
+                <!-- second line -->
+                <button class="grid-item second-one num" type="button">7</button>
+                <button class="grid-item second-two num" type="button">8</button>
+                <button class="grid-item second-three num" type="button">9</button>
+                <button class="grid-item second-four operators" type="button">x</button>
+
+
+                <div>
+                    <!-- third line -->
+                    <button class="grid-item third-one num" type="button">4</button>
+                    <button class="grid-item third-two num" type="button">5</button>
+                    <button class="grid-item third-three num" type="button">6</button>
+                    <button class="grid-item third-four operators" type="button">-</button>
+                </div>
+
+                <div>
+                    <!-- fourth line -->
+                    <button class="grid-item fourth-one num" type="button">1</button>
+                    <button class="grid-item fourth-two num" type="button">2</button>
+                    <button class="grid-item fourth-three num" type="button">3</button>
+                    <button class="grid-item fourth-four operators" type="button">+</button>
+                </div>
+
+                <div>
+                    <!-- fifth line -->
+                    <button class="grid-item fifth-zero num" type="button">0</button>
+                    <button class="grid-item fifth-two num" type="button">.</button>
+                    <!-- calculate() function evaluates the mathematical expression -->
+                    <button class="grid-item fifth-three equals" type="button">=</button>
+                </div>
             </div>
         </div>
-    </div>
 </body>
 <script src="./script.js"></script>
 
