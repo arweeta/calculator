@@ -1,31 +1,62 @@
 const numbers = document.querySelectorAll(".num")
-console.log(numbers)
-
-const operator = document.querySelectorAll(".operators")
-console.log(operator)
-
+const operators = document.querySelectorAll(".operators")
 const clear = document.querySelector(".AC")
-console.log(clear)
-
 const equal = document.querySelector(".equals")
-console.log(equal)
-
 const display = document.querySelector(".display-box")
 
-let num1 = null;
-let num2 = null;
-// let operator = null;
-// let display.innerText = null;
+//variables
+let num1 = "";
+let num2 = "";
+let operator = "";
+let result = "";
 
+//the AC button to display 0
 const turnOn = (e) => {
     display.innerText = "0"
 }
 clear.addEventListener("click", turnOn)
 
+//display number in the display box
 const displayNum = (e) => {
-    // display.innerText = numbers;
-    numbers.addEventListener("click", displayNum);
+    display.innerHTML = num1;
 }
+
+//calling the displayNum function
+const callNumber = (e) => {
+    console.log(e.target.innerHTML)
+    num1 += e.target.innerHTML
+        // console.log(num1)
+    displayNum()
+}
+
+//onclick event listener for each number pressed
+numbers.forEach((number) => {
+    number.addEventListener("click", callNumber)
+
+})
+
+//function for operators
+const callOperator = (e) => {
+    console.log(e.target.innerHTML)
+    operator = e.target.innerHTML
+        // console.log(operator);
+    displayNum()
+}
+
+operators.forEach((operator) => {
+    operator.addEventListener("click", callOperator)
+})
+
+//switch cases and operators to calculate
+const calculate = (n1, operator, n2) => {
+    let result
+
+};
+document.getElementById("result").value = answer;
+
+console.log(calculate);
+
+
 
 // function to clear values
 // function clearScreen() {
