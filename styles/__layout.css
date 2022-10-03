@@ -1,30 +1,105 @@
-.grid-item.top {grid-area: top-line;}
-.grid-item.first-one {grid-area: first-one;}
-.grid-item.first-two {grid-area: first-two;}
-.grid-item.first-three {grid-area: first-three;}
-.grid-item.first-four {grid-area: first-four;}
-.grid-item.second {grid-area: second;}
-.grid-item.third {grid-area: third;}
-.grid-item.fourth {grid-area: fourth;}
-.grid-item.fifth-zero {grid-area: fifth-zero;}
-.grid-item.fifth {grid-area: fifth;}
+.grid-item.top {
+    grid-area: tp;
+}
 
+.grid-item.first-one {
+    grid-area: f1;
+}
+
+.grid-item.first-two {
+    grid-area: f2;
+}
+
+.grid-item.first-three {
+    grid-area: f3;
+}
+
+.grid-item.first-four {
+    grid-area: f4;
+}
+
+.grid-item.second-one {
+    grid-area: s1;
+}
+
+.grid-item.second-two {
+    grid-area: s2;
+}
+
+.grid-item.second-three {
+    grid-area: s3;
+}
+
+.grid-item.second-four {
+    grid-area: s4;
+}
+
+.grid-item.third-one {
+    grid-area: t1;
+}
+
+.grid-item.third-two {
+    grid-area: t2;
+}
+
+.grid-item.third-three {
+    grid-area: t3;
+}
+
+.grid-item.third-four {
+    grid-area: t4;
+}
+
+.grid-item.fourth-one {
+    grid-area: f1;
+}
+
+.grid-item.fourth-two {
+    grid-area: f2;
+}
+
+.grid-item.fourth-three {
+    grid-area: f3;
+}
+
+.grid-item.fourth-four {
+    grid-area: f4;
+}
+
+.grid-item.fifth-zero {
+    grid-area: ffz;
+}
+
+.grid-item.fifth-two {
+    grid-area: ff2;
+}
+
+.grid-item.fifth-three {
+    grid-area: ff3;
+}
 
 .calculator {
     display: grid;
-    grid-template-areas: 'top-line top-line top-line top-line,' 
-    'first-one first-two first-three first-four';
+    /* grid-template-areas: 'f1, f2, f3, f4' 's1,s2,s3,s4' 't1,t2,t3,t4' 'f1,f2,f3,f4' 'ffz,ffz,ff2,ff3'; */
     background-color: rgba(37, 37, 37, 0.199);
-    padding: 10px;
+    padding: 40px;
+    justify-content: center;
 }
 
 .grid-item {
-    border: 1px solid rgba(0,0,0,0.8);
     padding: 10px;
     font-size: 30px;
-    text-align: center;
+    width: 12vh;
+    border-radius: 50%;
 }
 
-/* .grid-item-top {
+.grid-item.top {
+    width: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
 
-} */
+.grid-item.fifth-zero {
+    width: 25vh;
+}
